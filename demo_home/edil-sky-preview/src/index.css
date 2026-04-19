@@ -1,11 +1,24 @@
 @import 'tailwindcss';
-/* 
-:root{
+ 
+:root {
   --edil-blue-main: #0d57a2;
   --edil-gray-main: #585a5b;
   --edil-blue-light: #3b82f6;
   --edil-gray-dark: #474747;
   --edil-blue-dark: #0a4270;
+
+  /* helper RGB per gradienti / ombre / alpha */
+  --edil-blue-main-rgb: 13, 87, 162;
+  --edil-blue-light-rgb: 59, 130, 246;
+  --edil-gray-main-rgb: 88, 90, 91;
+  --edil-gray-dark-rgb: 71, 71, 71;
+}
+.sky-blue {
+    color: var(--edil-blue-main);
+}
+
+/* 
+:root{
 
   --text: #6b6375;
   --text-h: #08060d;
@@ -117,9 +130,6 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 } 
-.sky-blue {
-    color: var(--edil-blue-main);
-}  
 
 
 */

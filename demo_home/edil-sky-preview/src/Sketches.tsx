@@ -9,8 +9,16 @@ import React, { useEffect, useMemo, useState } from "react";
  * 3. Questo file può stare in src/App.tsx oppure essere importato da App.tsx
  */
 
+// type SketchModule = {
+//   default?: React.ComponentType<any>;
+// };
+// type SketchModule = {
+//   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+//   default?: React.ComponentType<any>;
+// };
+
 type SketchModule = {
-  default?: React.ComponentType<any>;
+  default?: React.ComponentType<unknown>;
 };
 
 const modules = import.meta.glob("./sketches/*.{tsx,jsx}", {

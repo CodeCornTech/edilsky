@@ -9,8 +9,8 @@ export default function EdilSkyLanding() {
   const { scrollYProgress } = useScroll();
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
- // const operatorY = useTransform(scrollYProgress, [0, 1], ["-10%", "160%"]);
- // const buildingsY = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  // const operatorY = useTransform(scrollYProgress, [0, 1], ["-10%", "160%"]);
+  // const buildingsY = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
   const tilt = useTransform(scrollYProgress, [0, 1], [0, 6]);
   const zoom = useTransform(scrollYProgress, [0, 0.4], [1, 1.25]);
   const particles = Array.from({ length: 60 }, (_, i) => ({
@@ -26,8 +26,7 @@ export default function EdilSkyLanding() {
         top: window.innerHeight,
         behavior: "smooth",
       });
-    }, 8500);  // tempo totale intro (tune questo)
-
+    }, 8500); // tempo totale intro (tune questo)
 
     return () => clearTimeout(timer);
   }, []);
@@ -167,7 +166,6 @@ export default function EdilSkyLanding() {
               </h1>
             </motion.div>
           </div>
-
         </motion.div>
 
         {/* IMPACT DROP */}
