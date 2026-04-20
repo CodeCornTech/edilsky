@@ -10,6 +10,7 @@ import React, { useEffect, useMemo, useState } from "react";
  */
 
 // type SketchModule = {
+//   default?: React.ComponentType<any>;
 // };
 // type SketchModule = {
 //   // eslint-disable-next-line @typescript-eslint/no-explicit-any

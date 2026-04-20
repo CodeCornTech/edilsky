@@ -9,16 +9,17 @@ const router = createBrowserRouter([
         path: "/", // Questo è l'URL principale (es: www.tuosito.com/)
         element: <EdilSkyLanding />,
     },
+    // Spalmiamo l'array di percorsi e creiamo un oggetto rotta per ciascuno
+    ...['/sketches', '/preview'].map(path => ({
+        path, // assegna la stringa corrente al path
+        element: <SketchViewerApp />, // assegna il componente
+    })),
+    /* Esempio di come aggiungere una nuova rotta:
     {
-        path: '/sketches', // La nuova rotta che hai richiesto
-        element: <SketchViewerApp />, // Il componente che verrà caricato
+        path: "/contatti", // (es: www.tuosito.com/contatti)
+        element: <ContattiPage />, // Un componente che hai creato
     },
-  /* Esempio di come aggiungere una nuova rotta:
-  {
-    path: "/contatti", // (es: www.tuosito.com/contatti)
-    element: <ContattiPage />, // Un componente che hai creato
-  },
-  */
+    */
 ]);
 
 export default function App() {
