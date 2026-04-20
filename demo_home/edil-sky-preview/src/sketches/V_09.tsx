@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 // (9)
 // const OPERATOR_SRC = "https://i.ibb.co/xSnnQBd8/omino.png";
-const OPERATOR_SRC = "public/omino.png";
+const OPERATOR_SRC = "/omino.png";
 
 function OperatorSilhouette() {
   return (
