@@ -188,28 +188,28 @@ export default function EdilSkyComingSoonPage() {
 
         <div className="pointer-events-none absolute inset-0 opacity-90">
           <div
-            className="absolute -left-[8%] top-[-4%] h-[2px] w-[44%] rotate-[38deg]"
+            className="absolute -left-[8%] top-[-4%] h-0.5 w-[44%] rotate-38"
             style={{
               backgroundColor: theme.ropeOne,
               boxShadow: `0 0 18px ${theme.ropeOne}`,
             }}
           />
           <div
-            className="absolute -left-[4%] top-[8%] h-[2px] w-[48%] rotate-[28deg]"
+            className="absolute -left-[4%] top-[8%] h-0.5 w-[48%] rotate-28"
             style={{
               backgroundColor: theme.ropeTwo,
               boxShadow: `0 0 18px ${theme.ropeTwo}`,
             }}
           />
           <div
-            className="absolute right-[-10%] top-[10%] h-[2px] w-[52%] rotate-[-42deg]"
+            className="absolute right-[-10%] top-[10%] h-0.5 w-[52%] rotate-[-42deg]"
             style={{
               backgroundColor: theme.ropeTwo,
               boxShadow: `0 0 18px ${theme.ropeTwo}`,
             }}
           />
           <div
-            className="absolute right-[-6%] top-[22%] h-[2px] w-[46%] rotate-[-28deg]"
+            className="absolute right-[-6%] top-[22%] h-0.5 w-[46%] rotate-[-28deg]"
             style={{
               backgroundColor: theme.ropeThree,
               boxShadow: `0 0 18px ${theme.ropeThree}`,
@@ -294,8 +294,8 @@ export default function EdilSkyComingSoonPage() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 md:flex-row">
               <a
-                href="tel:+390000000000"
-                className="inline-flex min-w-[220px] items-center justify-center rounded-2xl px-6 py-4 text-base font-extrabold uppercase tracking-[0.08em] text-white transition duration-200 hover:-translate-y-[1px]"
+                href="tel:+39800909224"
+                className="inline-flex min-w-55 items-center justify-center rounded-2xl px-6 py-4 text-base font-extrabold uppercase tracking-[0.08em] text-white transition duration-200 hover:-translate-y-px"
                 style={{
                   background:
                     "linear-gradient(180deg, var(--edil-blue-main) 0%, var(--edil-blue-dark) 100%)",
@@ -307,7 +307,7 @@ export default function EdilSkyComingSoonPage() {
 
               <a
                 href="mailto:info@edilsky.com"
-                className={`inline-flex min-w-[220px] items-center justify-center rounded-2xl border px-6 py-4 text-base font-bold uppercase tracking-[0.08em] transition duration-200 hover:-translate-y-[1px] ${theme.ghostText}`}
+                className={`inline-flex min-w-55 items-center justify-center rounded-2xl border px-6 py-4 text-base font-bold uppercase tracking-[0.08em] transition duration-200 hover:-translate-y-px ${theme.ghostText}`}
                 style={{
                   borderColor: theme.ghostBorder,
                   backgroundColor: theme.ghostBackground,
